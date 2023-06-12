@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: 'roboto','san-serif';
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-weight: 300;
+    text-transform:capitalize;
+}
+#banner{
+    background:linear-gradient(rgba(0,0,0,0.5),#009688) ,url(images/saloon3.jpeg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    color: white;
+    padding: 30px;
+}
+.tittle-text{
+    color: white;
+    text-align: center;
+    padding-top:30px ;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.tittle-text p{
+    font-size: 20px;
+}
+.tittle-btn a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border: .5px solid #fff;
+    margin: 20px;
+    padding:  10px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.5s;
+   
+}
+.tittle-btn a:hover{
+    background:white;
+    color: black;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right:-250px;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#sideBar{
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 10px; 
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#sideBar img{
+    width: 25px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+ .banner-btn a{
+    display: block;
+    margin: 20px auto;
+ }   
+}
+
+
+
+/* feature-section */
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+.tittle-texts{
+    text-align: center;
+}
+.tittle-texts p{
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color:#009688;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.tittle-texts p::after{
+    content: '';
+    width: 40px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+#feature .tittle-texts h1{
+    font-size: 50px;
+    font-weight: 600;            
+}           
+.feature-head{
+    width: 80%;
+    display: flex;
+    flex-basis: 50%;
+}
+.feature-text{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.feature-text p{
+    display: flex;
+    flex-direction: row;
+}
+

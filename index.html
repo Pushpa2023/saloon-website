@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloon Website</title>
+
+     
+     
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js"crossrigin="anonymous"></script>
+</head>
+<body>
+    <header id="banner">
+            <h1 class="logo">BERBER</h1>
+            <div class="tittle-text">
+                <h1>Hair Studio</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="tittle-btn">
+                    <a href="#"><span>Find Out</span></a>
+                    <a href="#"><span>Read More</span></a>
+                </div>
+            </div>
+        </header>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li><a href="#">MEET US</a></li>
+                </ul></nav>
+    </div>
+        <div id="sideBar">
+        <img src="https://cdn-icons-png.flaticon.com/128/5107/5107718.png" id="menu">
+        
+    </div>
+<!-- features section start -->
+<section id="feature">
+    <div class="tittle-texts">
+    <p>FEATURES</p>
+    <h1>Why Choose Us</h1></div>
+
+    <div class="feature-head">
+        <div class="feature-text">
+        <h1>experienced staff</h1>
+        <i class="fas fa-user"></i>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, inventore.</p>
+     </div>
+    
+     <div class="feature-text">
+        <h1>experienced staff</h1>
+        <i class="fas fa-user"></i>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, inventore.</p>
+     </div>
+
+     <div class="feature-text">
+        <h1>experienced staff</h1>
+        <i class="fas fa-user"></i>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, inventore.</p>
+     </div>
+                    <div class="feature-img">
+                    <img src="images/saloon4.jpeg" alt="image2">
+                </div>
+            </div>        
+</section>
+
+<!-- features section end -->
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var sideBar=document.getElementById("sideBar");
+var sideNav=document.getElementById("sideNav");
+var menu=document.getElementById("menu");
+
+sideNav.style.right="-250px";
+
+sideBar.onclick=function(){
+    if(sideNav.style.right=="-250px"){
+        sideNav.style.right="0";
+        menu.src="images/multiply.png";
+
+    }
+    else{
+        sideNav.style.right="-250px";
+        menu.src="images/multiply.png";
+    }
+}
+    </script>
+</body>
+</html>
